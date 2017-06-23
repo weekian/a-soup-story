@@ -3233,6 +3233,10 @@
 				visibility: visible;
 			}
 
+			#intro a.redirect {
+				color: #18bfef;
+			}
+
 		body.is-loading #intro {
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
@@ -3600,6 +3604,19 @@
 
 			#main > .post.featured {
 				text-align: center;
+			}
+
+			#main > .featured.motivation {
+				text-align: center;
+			}
+
+			#main > .featured.motivation > p.reasons {
+				font-weight:600;
+				font-size:110%;
+			}
+
+			#main > .featured.motivation > p.disclaimer {
+				font-style:italic;
 			}
 
 			@media screen and (max-width: 1280px) {

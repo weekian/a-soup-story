@@ -1,8 +1,47 @@
+<!DOCTYPE HTML>
+<!--
+	   Massively by HTML5 UP
+	   html5up.net | @ajlkn
+	   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
 <html>
-<head>
-  <title>{{page.title}}</title>
-</head>
-<body>
-  {{content}}
+
+{% include head.html %}
+
+<body class="is-loading">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
+
+
+
+     <!-- Intro -->
+     <div id="intro">
+     	<h1 id="hostName">Oops</h1>
+      <h2>There's no food here :(</h2>
+      <h2>Let's get that sorted out shall we?</h2>
+      <h2>Redirecting you back to our home page</h2>
+
+      </br></br>
+      <p>
+        Alternatively, click <a href={{"" | absolute_url }} class="redirect">here</a></a> to head back to our home page now
+      </p>
+
+     </div>
+
+
+
+    <!-- Who we are -->
+
+
+
+    <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/error.js" | absolute_url }}"></script>
 </body>
+
 </html>
