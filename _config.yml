@@ -1,0 +1,18 @@
+# Site Settings
+title: A Soup Story
+repository: weekian/weekian.github.io
+email: asoupstory@gmail.com
+country: Singapore
+timezone: Singapore
+encoding: utf-8
+
+# Exclusions
+exclude:
+  - README.md
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+
+# Social Settings
+instagram_url: https://www.instagram.com/asoupstory/

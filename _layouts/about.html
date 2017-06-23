@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!--
+	   Massively by HTML5 UP
+	   html5up.net | @ajlkn
+	   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
+<html>
+
+{% include head.html %}
+
+<body class="is-loading">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
+
+    {% include intro.html %} {% include header.html %} {% include menu.html %}
+
+    <!-- Who we are -->
+    <article class="post featured">
+      <h2>We would like you to get to know us better first.</h2>
+    </article>
+    <section class="posts">
+      <article>
+        <a class="image fit"><img src="{{ "" | absolute_url}}/assets/images/Belle.jpg" alt="" /></a>
+        <header>
+          <h2>Annabelle Ong</h2>
+        </header>
+        <ul>
+          <li>Loves coffee.</li>
+          <li>Surprisingly low tolerance for spice.</li>
+          <li>Always wants something sweet after meals.</li>
+          <li>Picky eater but has low standards for food.</li>
+        </ul>
+      </article>
+
+      <article>
+        <a class="image fit"><img src="{{ "" | absolute_url}}/assets/images/WK.jpg" alt="" /></a>
+        <header>
+          <h2>Yeam Wee Kian</h2>
+        </header>
+        <ul>
+          <li>Loves strong flavours.</li>
+          <li>Moderate tolerance for spice.</li>
+          <li>Never asks for chocolate or ice cream.</li>
+          <li>Eats everything but ginger.</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+
+
+{% include footer.html %}
+</body>
+
+</html>

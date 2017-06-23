@@ -1,0 +1,24 @@
+<!-- Footer -->
+<footer id="footer">
+    <section>
+        <form action="https://formspree.io/{{ site.email }}" method="POST" action="#">
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="_replyto" id="email" required/>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3" required></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" /></li>
+            </ul>
+            <span class="contact" >Alternatively, you can email us directly at <strong><a href="mailto:asoupstory@gmail.com">asoupstory@gmail.com</a></strong></span>
+        </form>
+    </section>
+
+</footer>
