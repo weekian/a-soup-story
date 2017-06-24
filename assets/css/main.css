@@ -3605,6 +3605,10 @@
 				text-align: center;
 			}
 
+			#main > .post.featured > h3 > a.link{
+				border-bottom: dotted 1px;
+			}
+
 			#main > .featured.motivation {
 				text-align: center;
 			}
