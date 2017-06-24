@@ -14,6 +14,7 @@ exclude:
   - Gemfile.lock
   - CNAME
   - assets/js/error.js
+  - assets/js/util.js
 
 # Social Settings
 instagram_url: https://www.instagram.com/asoupstory/
