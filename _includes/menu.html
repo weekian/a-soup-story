@@ -15,16 +15,12 @@
 		    {% endfor %}
 		</ul>
 		<ul class="icons">
-				{% for socialMedia in site.data.social %}
-				{% if socialMedia.facebook %}
-				<li><a href="{{ socialMedia.facebook }}" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+				{% if site.data.facebook.url %}
+				<li><a href="{{ site.data.facebook.url }}" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 				{% endif %}
-				{% if socialMedia.instagram %}
-				<li><a href="{{ socialMedia.instagram}}" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				{% if site.data.instagram.url %}
+				<li><a href="{{ site.data.instagram.url }}" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 				{% endif %}
-				{% endfor %}
-
-
 		</ul>
 </nav>
 
