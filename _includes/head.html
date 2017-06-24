@@ -1,9 +1,15 @@
+{% if site.url == "http://localhost:4000" %}
+	{% assign secure = "http" %}
+{% else %}
+	{% assign secure = "https" %}
+{% endif %}
+{{h | upcase}}
 <head>
 		<title>{{page.title}} | {{ site.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="shortcut icon" type="image/png" href="{{ 'assets/images/favicon.png' | absolute_url }}"/>
-		<link rel="stylesheet" href="{{ 'assets/css/font-awesome.min.css' | absolute_url }}" />
-		<link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}"/>
-		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url }}"/></noscript>
+		<link rel="shortcut icon" type="image/png" href="{{ 'assets/images/favicon.png' | absolute_url | replace: "http", secure }}"/>
+		<link rel="stylesheet" href="{{ 'assets/css/font-awesome.min.css' | absolute_url | replace: "http", secure }}" />
+		<link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url | replace: "http", secure }}"/>
+		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url | replace: "http", secure }}"/></noscript>
 </head>
