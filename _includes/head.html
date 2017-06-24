@@ -1,4 +1,4 @@
-{% if site.url == "http://localhost:4000" %}
+{% if site.url == "http://localhost:4000" or site.url contains "https" %}
 	{% assign secure = "http" %}
 {% else %}
 	{% assign secure = "https" %}
