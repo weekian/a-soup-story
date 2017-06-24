@@ -24,7 +24,7 @@
 
       </br></br>
       <p>
-        Alternatively, click <a href={{"" | absolute_url }} class="redirect">here</a></a> to head back to our home page now
+        Alternatively, click <a href={{"" | absolute_url | replace: "http", secure }} class="redirect">here</a></a> to head back to our home page now
       </p>
 
      </div>
@@ -34,13 +34,8 @@
     <!-- Who we are -->
 
 
-
-    <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/util.js" | absolute_url }}"></script>
-    <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+    {% include credit.html %}
+    {% include footer.html %}
     <script src="{{"assets/js/error.js" | absolute_url }}"></script>
 </body>
 
