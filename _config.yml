@@ -20,3 +20,5 @@ exclude:
   - package.json
   - node_modules
   - gulpfile.js
+  - start.bat
+  - open_cmd.bat
