@@ -17,6 +17,6 @@ exclude:
   - assets/js/util.js
   - assets/js/main.js
   - assets/css/main.css
-
-# Social Settings
-instagram_url: https://www.instagram.com/asoupstory/
+  - package.json
+  - node_modules
+  - gulpfile.js
