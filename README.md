@@ -1,1 +1,1 @@
-Repository for asoupstory.com
+Repository for www subdomain
