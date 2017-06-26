@@ -22,3 +22,4 @@ exclude:
   - gulpfile.js
   - start.bat
   - open_cmd.bat
+  - batch_files
