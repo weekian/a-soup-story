@@ -3613,6 +3613,11 @@
 				text-align: center;
 			}
 
+			#main > .featured.motivation > h2.about {
+				font-weight: normal;
+				font-family: Helvetica,sans-serif;
+			}
+
 			#main > .featured.motivation > p.reasons {
 				font-weight:600;
 				font-size:110%;
