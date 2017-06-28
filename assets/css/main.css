@@ -3613,15 +3613,11 @@
 				text-align: center;
 			}
 
-			#main > .featured.motivation > h2.about {
-				font-weight: normal;
-				font-family: Helvetica,sans-serif;
-			}
-
 			#main > .featured.motivation > p.reasons {
-				font-weight:600;
-				font-size:110%;
-				text-align: center;
+				line-height: 2.2;
+				font-size:100%;
+				text-align: justify;
+
 			}
 
 			#main > .featured.motivation > p.disclaimer {
