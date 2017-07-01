@@ -15,15 +15,7 @@ title: Home
     {% include intro.html %} {% include header.html %} {% include menu.html %}
 
     <!-- Featured Post -->
-    {% if paginator.size == 0%}
-
-    <article class="post featured">
-        <h2>Stay tuned for our first post.</h2>
-        <h1>We can't wait!</h1>
-        <h3>In the meantime, follow us on Instagram <a href="{{site.data.instagram.url}}" class="link">@asoupstory</a></h3>
-    </article>
-
-    {% else %}
+    {% if paginator and paginator.size != 0%}
 
     <!--If condition to display the featured only on the first page-->
     {% if page.url == "/" %}
@@ -60,7 +52,7 @@ title: Home
     <footer>
 
             <!--For Desktop View-->
-		        <div class="pagination wide">
+            <div class="pagination wide">
 
               <!--Prev and to first page buttons-->
               {% if paginator.previous_page %}
@@ -110,10 +102,10 @@ title: Home
                 {% endfor %}
               {% endif %}
               {% if paginator.next_page %}
-				        <a href="{{ paginator.next_page_path | absolute_url | replace: "http", secure }}" class="next">Next</a>
+                <a href="{{ paginator.next_page_path | absolute_url | replace: "http", secure }}" class="next">Next</a>
                 <a href="{{'page' | append: paginator.total_pages | absolute_url | replace: "http", secure }}" class="next last"></a>
               {% endif %}
-		        </div>
+            </div>
 
             <!--For Desktop View-->
             <div class="pagination narrow">
@@ -122,21 +114,20 @@ title: Home
                 <a href="{{ paginator.previous_page_path | absolute_url | replace: "http", secure }}" class="previous">Prev</a>
               {% endif %}
               {% if paginator.next_page %}
-				        <a href="{{ paginator.next_page_path | absolute_url | replace: "http", secure }}" class="next">Next</a>
+                <a href="{{ paginator.next_page_path | absolute_url | replace: "http", secure }}" class="next">Next</a>
                 <a href="{{'page' | append: paginator.total_pages | absolute_url | replace: "http", secure }}" class="next last"></a>
               {% endif %}
-		        </div>
+            </div>
     </footer>
 
-    <!--
-    <a href="#" class="page active">1</a>
-    <a href="#" class="page">2</a>
-    <a href="#" class="page">3</a>
-    <span class="extra">&hellip;</span>
-    <a href="#" class="page">8</a>
-    <a href="#" class="page">9</a>
-    <a href="#" class="page">10</a>
-    -->
+    {% else %}
+
+    <article class="post featured">
+        <h2>Stay tuned for our first post.</h2>
+        <h1>We can't wait!</h1>
+        <h3>In the meantime, follow us on Instagram <a href="{{site.data.instagram.url}}" class="link">@asoupstory</a></h3>
+    </article>
+
 
     {% endif %} {% include contact.html %}
 
