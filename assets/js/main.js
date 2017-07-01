@@ -134,7 +134,7 @@
 			// Toggle.
 
 			// Prevent toggle from appearing in 404.html page
-			if ($('.hostName').text() != "Oops" ){
+			if ($('#hostName').text() == "Oops" ){
 				$navPanelToggle = $(
 					'<a href="#navPanel" id="navPanelToggle">Menu</a>'
 				)
