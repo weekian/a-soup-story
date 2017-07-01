@@ -1,0 +1,154 @@
+---
+title: Home
+---
+{% assign firstPost = paginator.posts.first %}
+<!DOCTYPE HTML>
+<html>
+
+{% include head.html %}
+
+<body class="is-loading">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
+
+    {% include intro.html %} {% include header.html %} {% include menu.html %}
+
+    <!-- Featured Post -->
+    {% if paginator.size == 0%}
+
+    <article class="post featured">
+        <h2>Stay tuned for our first post.</h2>
+        <h1>We can't wait!</h1>
+        <h3>In the meantime, follow us on Instagram <a href="{{site.data.instagram.url}}" class="link">@asoupstory</a></h3>
+    </article>
+
+    {% else %}
+
+    <!--If condition to display the featured only on the first page-->
+    {% if page.url == "/" %}
+    <article class="post featured">
+        <header class="major">
+          <span class="date">{{ firstPost.date | date: "%B %-d, %Y" }}</span>
+          <h2><a href="{{ firstPost.url  | absolute_url | replace: "http", secure }}">{{ firstPost.title }}</a></h2>
+
+            <p>{{ firstPost.excerpt }}</p>
+        </header>
+        <a href="{{ firstPost.url  | absolute_url | replace: "http", secure }}" class="image main"><img src="{{ firstPost.image | absolute_url | replace: "http", secure }}" alt="" /></a>
+        <ul class="actions">
+            <li><a href="{{ firstPost.url  | absolute_url | replace: "http", secure }}" class="button big">Full Story</a></li>
+        </ul>
+    </article>
+    {% endif %}
+    <!-- Posts -->
+    <section class="posts">
+      {% for post in paginator.posts %}
+      <article>
+        <header>
+          <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          <h2><a href="{{ post.url  | absolute_url | replace: "http", secure }}">{{ post.title }}</a></h2>
+        </header>
+        <a href="{{ post.url  | absolute_url | replace: "http", secure }}" class="image fit"><img src="{{ post.image | absolute_url | replace: "http", secure }}" alt="" /></a>
+        <p>{{ post.excerpt }}</p>
+        <ul class="actions">
+          <li><a href="{{ post.url  | absolute_url | replace: "http", secure }}" class="button">Full Story</a></li>
+        </ul>
+      </article>
+      {% endfor %}
+    </section>
+
+    <footer>
+
+            <!--For Desktop View-->
+		        <div class="pagination wide">
+
+              <!--Prev and to first page buttons-->
+              {% if paginator.previous_page %}
+                <a href="{{ '/' | absolute_url | replace: "http", secure }}" class="previous first"></a>
+                <a href="{{ paginator.previous_page_path | absolute_url | replace: "http", secure }}" class="previous">Prev</a>
+              {% endif %}
+
+              <!-- more than 5 pages-->
+              {% if paginator.total_pages > 5 %}
+                {% assign lowerLimit = paginator.page | minus: 2 %}
+                {% assign upperLimit = paginator.page | plus: 2 %}
+
+                {% if lowerLimit > 1 %}
+                  <span class="extra">&hellip;</span>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                  {% if page >= lowerLimit and page <= upperLimit %}
+                    {% if page == paginator.page %}
+                      <span class="page active">{{ page }}</span>
+                    {% else %}
+                      {% if page == 1 %}
+                        <a href="{{ '/' | absolute_url | replace: "http", secure }}">{{ page }}</a>
+                      {% else %}
+                        <a href="{{ site.paginate_path | absolute_url | replace: ':num', page | replace: "http", secure }}">{{ page }}</a>
+                      {% endif %}
+
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% if upperLimit < paginator.total_pages %}
+                  <span class="extra">&hellip;</span>
+                {% endif %}
+              {% else %}
+
+                <!-- less than 5 pages-->
+                {% for page in (1..paginator.total_pages) %}
+                  {% if page == paginator.page %}
+                    <span class="page active">{{ page }}</span>
+                  {% else %}
+                  {% if page == 1 %}
+                    <a href="{{ '/' | absolute_url | replace: "http", secure }}">{{ page }}</a>
+                  {% else %}
+                    <a href="{{ site.paginate_path | absolute_url | replace: ':num', page | replace: "http", secure }}">{{ page }}</a>
+                  {% endif %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if paginator.next_page %}
+				        <a href="{{ paginator.next_page_path | absolute_url | replace: "http", secure }}" class="next">Next</a>
+                <a href="{{'page' | append: paginator.total_pages | absolute_url | replace: "http", secure }}" class="next last"></a>
+              {% endif %}
+		        </div>
+
+            <!--For Desktop View-->
+            <div class="pagination narrow">
+              {% if paginator.previous_page %}
+                <a href="{{ '/' | absolute_url | replace: "http", secure }}" class="previous first"></a>
+                <a href="{{ paginator.previous_page_path | absolute_url | replace: "http", secure }}" class="previous">Prev</a>
+              {% endif %}
+              {% if paginator.next_page %}
+				        <a href="{{ paginator.next_page_path | absolute_url | replace: "http", secure }}" class="next">Next</a>
+                <a href="{{'page' | append: paginator.total_pages | absolute_url | replace: "http", secure }}" class="next last"></a>
+              {% endif %}
+		        </div>
+    </footer>
+
+    <!--
+    <a href="#" class="page active">1</a>
+    <a href="#" class="page">2</a>
+    <a href="#" class="page">3</a>
+    <span class="extra">&hellip;</span>
+    <a href="#" class="page">8</a>
+    <a href="#" class="page">9</a>
+    <a href="#" class="page">10</a>
+    -->
+
+    {% endif %} {% include contact.html %}
+
+  </div>
+
+    {% include credit.html %}
+    <!-- Copyright -->
+
+  </div>
+  {% include footer.html %}
+
+</body>
+
+
+</html>

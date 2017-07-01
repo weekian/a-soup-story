@@ -2941,6 +2941,23 @@
 			padding: 0 1.75rem;
 		}
 
+		.pagination .next.last, .pagination .previous.first {
+			text-decoration: none;
+			padding: 0 0.5rem;
+		}
+
+		.pagination .previous.first:before {
+			content: '\f100';
+			float: none;
+			margin-right: 0;
+		}
+
+		.pagination .next.last:before {
+			content: '\f101';
+			float: none;
+			margin-left: 0;
+		}
+
 			.pagination .next:before, .pagination .previous:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
@@ -2965,6 +2982,7 @@
 			float: right;
 			margin-left: 0.9375em;
 		}
+
 
 		@media screen and (max-width: 980px) {
 
@@ -3005,7 +3023,12 @@
 		}
 
 	.pagination span {
-		color: #eeeeee;
+		background-color: #F9F9F9;
+	}
+
+	.pagination span.page.active {
+		background-color: #eee;
+		color: black;
 	}
 
 /* Wrapper */
@@ -3252,7 +3275,15 @@
 				opacity: 0;
 			}
 
+		@media screen and (min-width: 736px) {
+			.pagination.narrow {
+				display:none;
+			}
+		}
+
 		@media screen and (max-width: 980px) {
+
+
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
@@ -3270,6 +3301,10 @@
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.pagination.wide{
+				display:none;
+			}
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;

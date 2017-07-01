@@ -6,6 +6,14 @@ country: Singapore
 timezone: Singapore
 encoding: utf-8
 
+# Plugins
+# plugins_dir: [jekyll-paginate] - Not needed cos it's under the github-pages gem
+
+# Pagination
+# Default URL for subsequent pages set to https://www.asoupstory.com/page2
+paginate: 6
+
+
 # Exclusions
 exclude:
   - README.md
