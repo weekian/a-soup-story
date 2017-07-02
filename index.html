@@ -62,7 +62,7 @@ title: Home
         <!-- more than 5 pages-->
         {% if paginator.total_pages > 5 %} {% assign lowerLimit = paginator.page | minus: 2 %} {% assign upperLimit = paginator.page | plus: 2 %} {% if lowerLimit > 1 %}
         <span class="extra">&hellip;</span> {% endif %} {% for page in (1..paginator.total_pages) %} {% if page >= lowerLimit and page
-        <= upperLimit %} {% if page==p aginator.page %} <span class="page active">{{ page }}</span>
+        <= upperLimit %} {% if page==paginator.page %} <span class="page active">{{ page }}</span>
           {% else %} {% if page == 1 %}
           <a href="{{ '/' | absolute_url | replace: " http ", secure }}">{{ page }}</a> {% else %}
           <a href="{{ site.paginate_path | absolute_url | replace: ':num', page | replace: " http ", secure }}">{{ page }}</a> {% endif %} {% endif %} {% endif %} {% endfor %} {% if upperLimit
