@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+{% include head.html %}
+
+<body class="is-loading">
+
+  <div id="wrapper">
+    {% include intro.html %} {% include header.html %} {% include menu.html %}
+    <section class="post">
+      <header class="major">
+          <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
+          {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+          {% if page.description %}<h3>{{ page.description }}</h3>{% endif %}
+      </header>
+      {{ content }}
+      {% include disqus.html %}
+    </section>
+
+  </div>
+  {% include credit.html %} {% include footer.html %}
+
+</body>
+
+</html>

@@ -21,10 +21,11 @@ title: Home
             <header class="major">
               <span class="date">{{ post.date |  date: "%B %-d, %Y" }}</span>
               <h2><a href="{{ post.url  | absolute_url | replace: "http", secure }}">{{ post.title }}</a></h2>
+              <h3>{{post.description}}</h3>
             </header>
             <a href="{{ post.url  | absolute_url | replace: "http", secure }}" class="image main"><img src="{{ post.image | absolute_url | replace: "http", secure }}" alt="" /></a>
             <ul class="actions">
-              <p>{{ post.excerpt }}</p>
+              <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
                 <li><a href="{{ post.url  | absolute_url | replace: "http", secure }}" class="button big">Full Story</a></li>
             </ul>
         </article>
@@ -38,7 +39,7 @@ title: Home
             <h2><a href="{{ post.url  | absolute_url | replace: "http", secure }}">{{ post.title }}</a></h2>
           </header>
           <a href="{{ post.url  | absolute_url | replace: "http", secure }}" class="image fit"><img src="{{ post.image | absolute_url | replace: "http", secure }}" alt="" /></a>
-          <p>{{ post.excerpt }}</p>
+          <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
           <ul class="actions">
             <li><a href="{{ post.url  | absolute_url | replace: "http", secure }}" class="button">Full Story</a></li>
           </ul>

@@ -13,6 +13,9 @@ encoding: utf-8
 # Default URL for subsequent pages set to https://www.asoupstory.com/page2
 paginate: 6
 
+# Custom excerpt separator
+excerpt_separator: <!--excerpt-->
+
 
 # Exclusions
 exclude:

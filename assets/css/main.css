@@ -2461,12 +2461,19 @@
 			width: 100%;
 		}
 
+		.image.main.post {
+			display: block;
+			margin: 2rem 2rem 0 0;
+			width: 100%;
+		}
+
 			.image.main:first-child {
 				margin-top: 0;
 			}
 
 			.image.main img {
 				width: 100%;
+				margin-bottom: 2rem;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2707,6 +2714,11 @@
 
 	section.special, article.special {
 		text-align: center;
+	}
+
+	section > p {
+		margin: 0 0 1rem;
+		line-height: 2rem;
 	}
 
 	header {
@@ -4557,4 +4569,29 @@
 			visibility: visible;
 		}
 
+	}
+
+	span.dish{
+		font-style:italic;
+	}
+
+	span.rating{
+		font-weight: 900;
+	}
+
+	section.post > div.address {
+		margin: 2rem 0 2rem;
+		text-align: center;
+		font-style: italic;
+		line-height: 1.25rem;
+	}
+
+	section.post > div.address > ul.details {
+		list-style: none;
+		padding-left: 0px;
+	}
+
+	section.post > div.signoff {
+		margin-top: 4rem;
+		text-align: center;
 	}
