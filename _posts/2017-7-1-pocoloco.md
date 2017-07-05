@@ -38,7 +38,7 @@ I’m glad I got the <span class="dish">Manzo ($12)</span>, which is essentially
 
 For dessert, we had the <span class="dish">Lava Cake ($10)</span>. I LOVE THEIR LAVA CAKE. The chocolate really oozes out, and it looks like there is more liquid chocolate than the cake. The cake itself it slightly crisp on the surface, and soft and gooey on the inside. However, it is so incredibly sweet which is so wonderfully balanced with the vanilla ice cream. Eating the cake and the oozy-goodness with the ice cream together, you get the perfect dessert. (We scraped all the chocolate and ice cream off the plate) I would highly recommend their lava cake!! THE ULTIMATE YUMMERZ.
 
-<div class="image main post"><img src="'/assets/images/2017-7-1-pocoloco_5.png'" alt="" /></div>
+<div class="image main post"><img src='/assets/images/2017-7-1-pocoloco_5.png' alt="" /></div>
 
 All in all, PocoLoco is such a great date place because it has great service, food and ambience! We love it and we come here all the time. If you’re in Ang Mo Kio and are craving some good pasta, definitely try them out!
 
