@@ -6,6 +6,12 @@ image: assets/images/2017-7-1-pocoloco_6.png
 comments: true
 ---
 
+{% if site.url == "http://localhost:4000" or site.url contains "https" %}
+	{% assign secure = "http" %}
+{% else %}
+	{% assign secure = "https" %}
+{% endif %}
+
 We’re kicking off our first post with one of our favourites – PocoLoco!
 
 Situated at a quiet corner in Ang Mo Kio Ave 10, PocoLoco is a cosy and family-friendly restaurant. The restaurant is dimly-lit, which makes it actually a really great date-place.
