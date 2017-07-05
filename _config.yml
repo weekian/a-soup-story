@@ -1,10 +1,16 @@
 # Site Settings
 title: A Soup Story
+description: simple and honest reviews about the food that we come across
+url: https://www.asoupstory.com
+logo: https://www.asoupstory.com/favicon.png
 repository: weekian/weekian.github.io
 email: asoupstory@gmail.com
 country: Singapore
 timezone: Singapore
 encoding: utf-8
+social:
+    links:
+        - https://www.instagram.com/asoupstory/
 
 # Plugins
 # plugins_dir: [jekyll-paginate] - Not needed cos it's under the github-pages gem
@@ -15,6 +21,10 @@ paginate: 6
 
 # Custom excerpt separator
 excerpt_separator: <!--excerpt-->
+
+# gems to activate
+gems:
+  - jekyll-seo-tag
 
 
 # Exclusions
