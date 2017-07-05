@@ -59,6 +59,6 @@ Menu here: <a href="https://pocoloco.com.sg/menu/">https://pocoloco.com.sg/menu/
 Tip: They do take reservations! Make sure you call them to reserve a table because the restaurant gets really crowded as the evening progresses.
 
 <div class="signoff">
-<img src="{{'favicon.png' | absolute_url}}" alt="">
+<img src="{{'favicon.png' | absolute_url | replace: "http", secure}}" alt="">
 <h4>A Soup Story</h4>
 </div>
