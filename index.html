@@ -107,7 +107,9 @@ title: Home
   <!-- Copyright -->
 
   {% include footer.html %}
-
+  {% if isProduction == true %}
+      {% include analytics.html %}
+  {% endif %}
 </body>
 
 

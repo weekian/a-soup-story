@@ -17,9 +17,5 @@
 		<link rel="stylesheet" href="{{ 'assets/css/main.min.css' | absolute_url | replace: "http", secure }}"/>
 		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url | replace: "http", secure }}"/></noscript>
 		<meta name="google-site-verification" content="ap0Hr6oMbxRe2BT0PdP7d1Ql5MCKWeFxbi4vUtB-Xzg" />
-		{% if isProduction == true %}
-			{% include analytics.html %}
-		{% endif %}
-
 		{% seo title=false %}
 </head>

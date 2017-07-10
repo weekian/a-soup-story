@@ -57,7 +57,9 @@
   </div>
 {% include credit.html %}
 {% include footer.html %}
-
+{% if isProduction == true %}
+    {% include analytics.html %}
+{% endif %}
 </body>
 
 </html>
