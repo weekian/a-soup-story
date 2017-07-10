@@ -1,8 +1,11 @@
-{% if site.url == "http://localhost:4000" or site.url contains "https" %}
+{% if site.url contains "localhost" or site.url contains "https" %}
 	{% assign secure = "http" %}
-	{% assign isProduction = false %}
 {% else %}
 	{% assign secure = "https" %}
+{% endif %}
+{% if site.url contains "localhost" %}
+	{% assign isProduction = false %}
+{% else %}
 	{% assign isProduction = true %}
 {% endif %}
 <head>
