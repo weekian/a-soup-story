@@ -16,6 +16,8 @@ GoDaddy is used to purchase the domain asoupstory.com.
 
 Jekyll is used to generate the website.
 
+Disquis for users to comment on posts
+
 Credits
 ------
 [HTML5UP](https://html5up.net/)
