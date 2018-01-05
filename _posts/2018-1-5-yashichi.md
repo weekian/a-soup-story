@@ -15,7 +15,7 @@ comments: true
 One of the best and most heartwarming and unique bowls of ramen that we had in Osaka, Japan was Ramen Yashichi. Weekian was so insistent on going there, even though it was out of the way of our itinerary. And now I know why.
 
 When we arrived, it was about 1.15pm and I was starving (having not had breakfast that morning). Since the restaurant was full, the staff deeply apologized (with the polite manner that all Japanese seem to have) and asked us if we were willing to wait. I almost backed out because I was so hungry, but decided to wait, since we’d already gone all the way there. 
-
+<!--excerpt-->
 <div class="image main post"><img src="{{ 'assets/images/2018-1-5-yashichi_2.jpg' | absolute_url | replace: "http", secure}}" alt="" /></div>
 
 We were given a little queue card stating the time we were supposed to be back there, and we both agreed that it was an effective and economical system. There wasn’t anywhere else to go, so we decided to sit at the nearby park to read.

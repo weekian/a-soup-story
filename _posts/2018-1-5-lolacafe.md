@@ -17,7 +17,7 @@ Lola’s Café is just a short 5-minute walk from Kovan MRT. Even though it is a
 We went there on a Saturday afternoon at about 1pm and there was a long lunch queue with about a 15-minute wait. Fortunately, we were just 2 people who were too hungry to wait to get seated inside. There are about 4 seats outside the café and we were immediately seated WEW. 
 
 Their menu may not seem to have a large variety of foods to choose from at first glance, but they do have interesting food combinations and choices that we have not seen elsewhere. We honestly had such a hard time choosing what we wanted to eat.
-
+<!--excerpt-->
 <div class="image main post"><img src="{{ 'assets/images/2018-1-5-lolacafe_2.jpg' | absolute_url | replace: "http", secure}}" alt="" /></div>
 
 Even though we may not be artisanal-level coffee drinkers, we like to try how different cafés make their coffee. So we ordered their <span class="dish">Latte ($5)</span>. I was glad to see that their latte art was not the typical heart shape, it’s always refreshing to other latte art. The coffee was lighter than I imagined, but it was definitely acidic. Weekian was not a huge fan of the acidity, but I didn’t mind so I had most of it. I would’ve preferred the cup to have a handle, though, especially with hot coffee.
