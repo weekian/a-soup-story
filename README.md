@@ -2,7 +2,8 @@ asoupstory
 ======
 
 
-This is the repository for [asoupstory](https://www.asoupstory.com).
+This is the repository **originally** for [asoupstory](https://www.asoupstory.com).
+
 
 
 Technical
