@@ -34,7 +34,7 @@ Wee Kian got the <span class="dish">Granchio ($12)</span> – crabmeat with pink
 
 I’m glad I got the <span class="dish">Manzo ($12)</span>, which is essentially a cream pasta with white truffle oil and beef, because it was a good complement to the Granchio. This pasta is more full-bodied and flavourful. You can taste the garlic, but it’s not overpowering. Together with the cream and truffle, it’s easily one of my favourite dishes. The pieces of beef are also quite substantial, and they taste really yummy with the sauce.
 
-<div class="image main post"><img src="{{ 'assets/images/2017-7-1-pocoloco_4.png' | absolute_url | replace: "http", secure}}" alt="" /></div>
+<div class="image main post"><img src="assets/images/2017-7-1-pocoloco_4.png" alt="" /></div>
 
 For dessert, we had the <span class="dish">Lava Cake ($10)</span>. I LOVE THEIR LAVA CAKE. The chocolate really oozes out, and it looks like there is more liquid chocolate than the cake. The cake itself it slightly crisp on the surface, and soft and gooey on the inside. However, it is so incredibly sweet which is so wonderfully balanced with the vanilla ice cream. Eating the cake and the oozy-goodness with the ice cream together, you get the perfect dessert. (We scraped all the chocolate and ice cream off the plate) I would highly recommend their lava cake!! THE ULTIMATE YUMMERZ.
 
