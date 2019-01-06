@@ -1,9 +1,9 @@
 # Site Settings
 title: A Soup Story
 description: simple and honest reviews about the food that we come across
-url: https://weekian.github.io
-logo: https://weekian.github.io/favicon.png
-repository: weekian/weekian.github.io
+url: https://weekian.github.io/a-soup-story
+logo: https://weekian.github.io/a-soup-story/favicon.png
+repository: weekian/a-soup-story
 email: asoupstory@gmail.com
 country: Singapore
 timezone: Singapore
@@ -16,7 +16,7 @@ social:
 # plugins_dir: [jekyll-paginate] - Not needed cos it's under the github-pages gem
 
 # Pagination
-# Default URL for subsequent pages set to https://www.asoupstory.com/page2
+# Default URL for subsequent pages set to https://weekian.github.io/a-soup-story/page2
 paginate: 6
 
 # Custom excerpt separator
