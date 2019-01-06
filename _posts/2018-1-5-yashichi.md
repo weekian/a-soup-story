@@ -16,7 +16,7 @@ One of the best and most heartwarming and unique bowls of ramen that we had in O
 
 When we arrived, it was about 1.15pm and I was starving (having not had breakfast that morning). Since the restaurant was full, the staff deeply apologized (with the polite manner that all Japanese seem to have) and asked us if we were willing to wait. I almost backed out because I was so hungry, but decided to wait, since we’d already gone all the way there. 
 <!--excerpt-->
-<div class="image main post"><img src="{{ 'assets/images/2018-1-5-yashichi_2.jpg' | absolute_url | replace: "http", secure}}" alt="" /></div>
+<div class="image main post"><img src="{{ 'assets/images/2018-1-5-yashichi_2.jpg' | relative_url | replace: "http", secure}}" alt="" /></div>
 
 We were given a little queue card stating the time we were supposed to be back there, and we both agreed that it was an effective and economical system. There wasn’t anywhere else to go, so we decided to sit at the nearby park to read.
 
@@ -24,7 +24,7 @@ When it was our turn, we waited only for about 5 minutes more before we could or
 
 Since we were seated beside the kitchen, we could watch how meticulous and precise they were as they cooked the bowls of ramen. I could just feel the love put into their food.
 
-<div class="image main post"><img src="{{ 'assets/images/2018-1-5-yashichi_3.jpg' | absolute_url | replace: "http", secure}}" alt="" /></div>
+<div class="image main post"><img src="{{ 'assets/images/2018-1-5-yashichi_3.jpg' | relative_url | replace: "http", secure}}" alt="" /></div>
 
 The generous toppings added so much texture to the ramen, making the whole experience so much more interesting. The noodles itself was not too hard or soft, YUMZ. But we thought the onions were just a liiiitle bit overpowering because they were cut a slightly big – No worries though, if you don’t like onions you can easily take them out. The egg was perfectly cooked (TOTALLY Belle-approved).
 
@@ -48,6 +48,6 @@ We say… <span class="rating">9.5/10!</span> :) A must-visit when you’re in O
 Tip: BRING CASH! They don’t take cards. Also, even if you’re not too hungry yet, go early to get a queue number! Grab a book and hang out by the park, which is just a minute’s walk away.
 
 <div class="signoff">
-<img src="{{'favicon.png' | absolute_url | replace: "http", secure}}" alt="">
+<img src="{{'favicon.png' | relative_url | replace: "http", secure}}" alt="">
 <h4>A Soup Story</h4>
 </div>
